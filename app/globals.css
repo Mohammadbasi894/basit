@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}
+
+.bg-main {
+  background: linear-gradient(40deg, rgb(89, 95, 51), rgb(52, 53, 47));
+}
+.bg-basit {
+    background: url(../public/me.png);
+    background-position-x: right;
+    background-position-y: top;
+    z-index: 7000;
+}
+
+.a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #59606e;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        
+        .a:hover {
+            background: #59606e;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #59606e, 0 0 25px #59606e, 0 0 50px #59606e, 0 0 100px #59606e;
+        }
+        
+        .span {
+            position: absolute;
+            display: block;
+        }
+        
+        .span1 {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #59606e);
+            animation: btn-anim1 2s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .span2 {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #59606e);
+            animation: btn-anim2 2s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .span3 {
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #59606e);
+            animation: btn-anim3 2s linear infinite;
+            animation-delay: 1s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .span4 {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #59606e);
+            animation: btn-anim4 2s linear infinite;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+
+ .fade-in {
+    opacity: 0;
+    animation: fadeIn 7s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.magic-bg {
+    background: rgb(22, 26, 19) !important;
+}
+
+.FOBTN-bg {
+    background: rgb(55, 63, 49) !important;
+}
+
+.bag-ss {
+    background: (48 48 31 / 75%);
+}
+
+/* .magbg {
+    background: #fd0303 !important;
+} */
+
+.topside-o{
+        height: auto;
+    }
+
+@media (max-width: 1150px){
+    .mon {
+        display: block !important;
+    }
+    .lon {
+        display: none !important;
+    }
+    .the-main-top{
+        width: 420px;
+        height: 300px;
+        border-bottom-right-radius: 50%;
+    }
+    .gr-st-run{
+        width: 420px;
+        height: 300px;
+        border-bottom-right-radius: 50%;
+    }
+    .topside-o{
+        height: auto;
+    }
+    .mo-to-text{
+        font-size: 35px !important;
+    }
+    .topside-seco{
+        width: 420px;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .sep-top{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mo-inside-top{
+        /* margin-top: 5px; */
+    }
+    .a{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px){
+    .the-main-top{
+        width: 350px;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+    }
+    .gr-st-run{
+        width: 350px;
+        height: 300px;
+        border-bottom-right-radius: 100%;
+    }
+    .topside-o{
+        height: auto;
+    }
+    .mo-to-text{
+        font-size: 40px !important;
+    }
+    .topside-seco{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+    .sep-top{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .mo-inside-top{
+        margin-top: 5px;
+    }
+    .mon {
+        display: none !important;
+    }
+    .lon {
+        display: block !important;
+    }
+}
+
+@media (max-width: 800px){
+    .hen {
+        margin-top: 0px;
+    }
+    .over-t{
+        font-size: 30px;
+    }
+    .ov-p-t{
+        font-size: 15px;
+    }
+    .tart-holder{
+        gap: 5px !important;
+    }
+    .fitl{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .tart{
+        height: 340px !important;
+        width: 280px !important;
+    }
+    .ico{
+
+    }
+    .fitel{
+
+    }
+    .depsersion{
+
+    }
+}
+
+@media (max-width: 768px){
+    .se-se-p{
+        padding-top: 30px;
+    }
+    .a{
+        margin-top: 15px;
+    }
+    .mon {
+        display: block !important;
+    }
+    .lon {
+        display: none !important;
+    }
+     .topside-o{
+        display: block;
+        height: auto;
+        margin-top: 10px;
+    }
+    .sep-top{
+        margin-top: 20px;
+    }
+    .mo-inside-top{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .topside-seco{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .the-main-top{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .gr-st-run{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .tart-holder{
+        gap: 2px !important;
+    }
+    .fitl{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .tart{
+        height: 300px !important;
+        width: 250px !important;
+    }
+    .ico{
+
+    }
+    .fitel{
+
+    }
+    .depsersion{
+
+    }
+}
+
+@media (max-width: 640px){
+    .over-t{
+        font-size: 22px;
+    }
+    .ov-p-t{
+        font-size: 11px;
+    }
+    .the-main-top{
+        width: 200px;
+        height: 200px;
+    }
+    .gr-st-run{
+        height: 200px;
+        width: 200px;
+    }
+    .mo-to-text{
+        font-size: 25px !important;
+    }
+    .mo-he-text{
+        font-size: 9px;
+    }
+    .sep-top{
+        margin-top: 20px;
+    }
+    .mo-inside-top{
+        margin-top: 0px;
+        margin-bottom: 3px;
+    }
+    .name-top{
+        margin-bottom: 5px;
+    }
+    .a{
+        margin-top: 10px;
+    }
+    .topside-o{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tart-holder{
+        gap: 2px !important;
+    }
+    .fitl{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .tart{
+        height: 270px !important;
+        width: 220px !important;
+    }
+    .ico{
+
+    }
+    .fitel{
+        font-size: 18px !important;
+    }
+    .depsersion{
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 500px){
+    .over-t{
+        font-size: 16px;
+    }
+    .ov-p-t{
+        font-size: 10px;
+    }
+    .mo-to-text{
+        font-size: 25px !important;
+    }
+    .tart-holder{
+        gap: 2px !important;
+    }
+    .fitl{
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        min-height: 240px !important;
+    }
+    .tart{
+        height: 240px !important;
+        width: 180px !important;
+    }
+    .ico{
+        font-size: 70px !important;
+    }
+    .fitel{
+        font-size: 14px !important;
+    }
+    .depsersion{
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 400px){
+    .over-t{
+        font-size: 14px;
+    }
+    .ov-p-t{
+        font-size: 8px;
+    }
+    .mo-to-text{
+        font-size: 23px !important;
+    }
+    .cp{
+        font-size: 10px;
+    }
+        .tart-holder {
+            gap: 2px !important;
+        }
+    
+        .fitl {
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            min-height: 210px !important;
+        }
+    
+        .tart {
+            height: 210px !important;
+            width: 160px !important;
+        }
+    
+        .ico {
+            font-size: 50px !important;
+        }
+    
+        .fitel {
+            font-size: 12px !important;
+        }
+    
+        .depsersion {
+            font-size: 8px !important;
+        }
+}
+

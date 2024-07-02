@@ -1,0 +1,263 @@
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 200px;
+  background-color: #999999;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 9px 4px #3a2727;
+}
+
+.progress {
+  height: 10px;
+  background-color: #533d3d;
+  transition: width 1s ease-in-out;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0px 0px 30px red;
+    /* boxShadow: 0px 0px 30px red, */
+}
+
+
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.skills {
+  height: 500px;
+}
+
+.bg-canva{
+  background: url(../public/herobg.png);
+  background-size: cover;
+  opacity: 0.2;
+  width: 100vw;
+  height: 500px;
+  margin-top: -470px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1310px){
+  .progress-bar {
+  width: 200px;
+}
+.skills-container {
+    gap: 15px;
+    width: 95%;
+}
+.skills{
+  height: 500px;
+}
+.bg-canva{
+  height: 550px;
+  margin-top: -480px;
+}
+}
+
+@media (max-width: 1150px){
+  .progress-bar {
+  width: 180px;
+}
+.skills-container {
+    gap: 15px;
+    width: 97%;
+}
+.skills{
+  height: 500px;
+}
+.bg-canva{
+  height: 500px;
+  margin-top: -460px;
+}
+}
+
+@media (max-width: 1000px){
+  .progress-bar {
+  width: 180px;
+}
+.skills-container {
+    gap: 10px;
+    width: 90%;
+}
+.skills{
+  height: 550px;
+}
+.bg-canva{
+  height: 550px;
+  margin-top: -515px;
+}
+}
+
+@media (max-width: 900px){
+  .progress-bar {
+  width: 180px;
+}
+.skills-container {
+    gap: 10px;
+    width: 90%;
+}
+.skills{
+  height: 650px;
+}
+.bg-canva{
+  height: 650px;
+  margin-top: -640px;
+}
+}
+
+@media (max-width: 800px){
+.progress-bar {
+  width: 140px;
+}
+.skills-container {
+    gap: 10px;
+    width: 98%;
+}
+.skills{
+  height: 650px;
+}
+.bg-canva{
+  height: 530px;
+  margin-top: -500px;
+}
+}
+@media (max-width: 700px){
+  .progress-bar {
+  width: 130px;
+}
+.skills-container {
+    gap: 10px;
+    width: 95%;
+}
+.skills{
+  height: 650px;
+}
+.bg-canva{
+  height: 530px;
+  margin-top: -500px;
+}
+}
+@media (max-width: 600px){
+  .progress-bar {
+  width: 140px;
+}
+.skills-container {
+    gap: 10px;
+    width: 90%;
+}
+.bmh{
+  font-size: 30px;
+}
+.skills{
+  height: 620px;
+}
+.bg-canva{
+  height: 620px;
+  margin-top: -620px;
+}
+}
+@media (max-width: 500px){
+  .progress-bar {
+  width: 80px;
+  box-shadow: 0px 0px 6px 3px #3a2727;
+}
+.progress {
+  height: 5px;
+}
+.skill-name {
+  font-size: 7px;
+}
+.skills-container {
+    gap: 10px;
+    width: 90%;
+}
+.skills{
+  height: 360px;
+}
+.bg-canva{
+  height: 370px;
+  margin-top: -360px;
+}
+.bmh{
+  font-size: 20px;
+}
+}
+@media (max-width: 400px){
+  .skill{
+    margin-bottom: 10px;
+  }
+  .progress-bar {
+  width: 80px;
+  box-shadow: 0px 0px 6px 3px #3a2727;
+}
+.progress {
+  height: 5px;
+}
+.skill-name {
+  font-size: 5px;
+}
+.skills-container {
+    gap: 5px;
+    width: 80%;
+    margin-top: 5px;
+}
+.skills{
+  height: 360px;
+}
+.bg-canva{
+  height: 320px;
+  margin-top: -300px;
+}
+.bmh{
+  font-size: 16px;
+}
+}
+
+@media (max-width: 312px){
+  .skill{
+    margin-bottom: 10px;
+  }
+  .progress-bar {
+  width: 80px;
+  box-shadow: 0px 0px 6px 3px #3a2727;
+}
+.progress {
+  height: 5px;
+}
+.skill-name {
+  font-size: 5px;
+}
+.skills-container {
+    gap: 5px;
+    width: 90%;
+    margin-top: 5px;
+}
+.skills{
+  height: 360px;
+}
+.bg-canva{
+  height: 320px;
+  margin-top: -300px;
+}
+.bmh{
+  font-size: 16px;
+}
+}
